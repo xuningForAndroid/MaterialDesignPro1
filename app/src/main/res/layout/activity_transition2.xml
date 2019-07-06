@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".value_anim.TransitionActivity"
+    android:onClick="jumpBack"
+    android:id="@+id/homeLayout">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="标题"
+    android:gravity="center"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:id="@+id/tv_title"
+    android:background="@color/navigationBarColor"
+    android:textColor="#fff"
+    android:transitionName="tv_transition"
+    android:textSize="18sp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/iv_content"
+        android:src="@drawable/tulips2"
+        android:scaleType="centerCrop"
+        android:transitionName="iv_transition"/>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vercode.VercodeActivity">
+
+    <com.xn.materialdesignpro1.vercode.VercodeEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:figures="6"
+        android:text=""
+        android:textCursorDrawable="@drawable/cursor_shape"
+        android:id="@+id/vercodeView"
+        android:textSize="40sp"
+        android:inputType="number"
+        app:bottomLineHeight="2dp"
+        app:vercodeMargin="10dp"
+        app:selectedColor="#f00"
+        app:selectedBackgroundColor="#00000000"
+        />
+</RelativeLayout>

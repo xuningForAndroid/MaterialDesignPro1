@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".coordinatelayout.uc_demo.UcMainActivity">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/id_uc_news_header_pager"
+    android:background="@color/navigationBarColor"
+    app:layout_behavior="com.xn.materialdesignpro1.coordinatelayout.uc_demo.UcNewsHeaderPagerBehavior">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:padding="12dp"/>
+</FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        app:layout_behavior="com.xn.materialdesignpro1.coordinatelayout.uc_demo.UcNewsTitleBehavior"
+        android:layout_height="@dimen/uc_news_header_title_height">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_title_tv"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="@string/uc"
+            android:textColor="#fff"
+            android:textSize="15sp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:padding="3dp"
+            android:src="@mipmap/ic_add_white_24dp"
+            />
+    </FrameLayout>
+<android.support.design.widget.TabLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/uc_news_tabs_height"
+    android:background="@color/colorPrimary"
+    app:tabGravity="fill"
+    app:tabIndicatorColor="#ff0"
+    app:tabSelectedTextColor="#f00"
+    app:tabTextColor="#0f0"
+    app:layout_behavior="com.xn.materialdesignpro1.coordinatelayout.uc_demo.UcNewsTabBehavior"
+    android:id="@+id/id_uc_news_tab"
+    />
+    <com.xn.materialdesignpro1.coordinatelayout.uc_demo.MyViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.xn.materialdesignpro1.coordinatelayout.uc_demo.UcNewsContentBehavior"
+        android:background="#f0f4c3"
+        android:id="@+id/id_uc_news_content"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

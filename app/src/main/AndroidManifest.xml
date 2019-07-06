@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xn.materialdesignpro1">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".coordinatelayout.uc_demo.DemoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- recycleView添加头尾 -->
+        <activity android:name=".headerandfooter.MainActivity" />
+        <!-- RecycleView实现拖拽和侧滑 -->
+        <activity android:name=".itemtouchhelper.SecondActivity" />
+        <!-- 抽屉效果 -->
+        <activity android:name=".drawerlayout.ThirdActivity" />
+        <!-- 抽屉效果2 -->
+        <activity android:name=".navigationview.ForthActivity" />
+        <!-- 自定义吐司 -->
+        <activity android:name=".snackbar.FifthActivity" />
+        <!-- toolbar上的searchView -->
+        <activity android:name=".searchview.SixthActivity" />
+        <activity android:name=".base.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChartViewActivity"/>
+        <activity android:name=".toolbar.SeventhActivity" />
+        <activity android:name=".translusenttoolbar.EighthActivity" />
+        <activity android:name=".translusentLayout.NinthActivity" />
+        <activity android:name=".translusentLayout.TenthActivity" />
+        <activity android:name=".translusentLayout.EleventhActivity" />
+        <activity android:name=".translusentLayout.TranslucentBaseActivity" />
+        <activity android:name=".translusentLayout.TwelveActivity" />
+        <activity android:name=".cardviewandfat.ThirteenActivity" />
+        <activity android:name=".cardviewandfat.ForteenActivity" />
+        <activity android:name=".fab_anim.FifteenActivity" />
+        <activity android:name=".anim_behavior.SixteenActivity" />
+        <activity android:name=".parallel_universe.SeventeenActivity" />
+        <activity android:name=".coordinatelayout.EighteenActivity" />
+        <activity android:name=".coordinatelayout.NinteenActivity" />
+        <activity android:name=".coordinatelayout.TwentithActivity" />
+        <activity android:name=".coordinatelayout.TwentyFirstActivity" />
+        <activity android:name=".coordinatelayout.TwentyTwoActivity" />
+        <activity android:name=".coordinatelayout.TwentyThreeActivity" />
+        <activity android:name=".coordinatelayout.TwentyFourActivity" />
+        <activity android:name=".coordinatelayout.uc_demo.UcMainActivity" />
+        <activity android:name=".value_anim.ValueAnimatorActivity" />
+        <activity android:name=".md_animator.MaterialDesignAnimatorActivity" />
+        <activity android:name=".value_anim.ValueAnimatordemo2Activity" />
+        <activity android:name=".value_anim.TransitionActivity" />
+        <activity android:name=".value_anim.Transition2Activity" />
+        <activity android:name=".svg.SVGActivity" />
+        <activity android:name=".custom_anim_frame.CustomAnimActivity" />
+        <activity android:name=".custom_anim_frame2.CustomAnim2Activity" />
+        <activity android:name=".event_dispatch.EventDispatchActivity" />
+        <activity android:name=".event_conflict.ScrollAndListActivity" />
+        <activity android:name=".event_dispatch.CustomVpActivity" />
+        <activity android:name=".event_dispatch.CustomSlidingMenuActivity" />
+        <activity android:name=".event_dispatch.CustomSlidingItemActivity" />
+        <activity android:name=".paint.PaintActivity" />
+        <activity android:name=".paint.MyCustomActivity" />
+        <activity android:name=".paint.GradientActivity" />
+        <activity android:name=".paint.ZoomImageViewActivity" />
+        <activity android:name=".paint.RaDarActivity" />
+        <activity android:name=".paint.WaveActivity" />
+        <activity android:name=".pannel.PannelViewActivity" />
+        <activity android:name=".maskFilter.FilterActivity" />
+        <activity android:name=".canvas.CanvasActivity" />
+        <activity android:name=".canvas.AnimSearchViewActivity" />
+        <activity android:name=".banner.MyBannerActivity" />
+        <activity android:name=".CoverFlow.CoverFlowActivity" />
+        <activity android:name=".bessel_curve.BesselCurveActivity" />
+        <activity android:name=".bessel_curve.WaveBallActivity" />
+        <activity android:name=".pathmeasure.PathMeasureActivity" />
+        <activity android:name=".bessel_curve.WaveShipViewActivity" />
+        <activity android:name=".vercode.VercodeActivity" />
+        <activity android:name=".bessel_curve.PathMeasureSearchActivity" />
+        <activity android:name=".ui_flow.UIActivity" />
+        <activity android:name=".custom_view.MyFirstViewGroupActivity" />
+        <activity android:name=".custom_view.FlowLayoutActivity" />
+        <activity android:name=".custom_view.PieChartActivity" />
+        <activity android:name=".custom_view.StepViewActivity" />
+        <activity android:name=".custom_view.MyLoadingActivity" />
+        <activity android:name=".custom_view.MyLoadingView2Activity" />
+        <activity android:name=".custom_view.MyLoadingView3Activity" />
+        <activity android:name=".custom_view.LeafLoadingActivity" />
+        <activity android:name=".custom_view.RadarNetActivity" />
+        <activity android:name=".bessel_curve.BesselTouchActivity"></activity>
+        <activity android:name=".bessel_curve.indicator.DropIndicatorActivity"/>
+    </application>
+
+</manifest>

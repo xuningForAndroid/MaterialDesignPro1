@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".value_anim.ValueAnimatordemo2Activity">
+<LinearLayout
+    android:id="@+id/view1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/view1_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:onClick="playAnimator1"
+        android:background="@color/navigationBarColor"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/icon_2"
+        android:scaleType="fitXY"/>
+</LinearLayout>
+    <ImageView
+        android:id="@+id/view2"
+        android:onClick="playAnimator2"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/icon_1"
+        android:scaleType="centerCrop"
+        android:translationY="500dp"
+        />
+</RelativeLayout>

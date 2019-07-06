@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xn.materialdesignpro1.pannel.SlidingUpPanelLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="bottom"
+    android:id="@+id/pannel"
+    app:umanoPanelHeight="230dp"
+    app:umanoParallaxOffset="0dp"
+    app:umanoShadowHeight="0dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/qingchunmeinv"
+            android:scaleType="centerCrop"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/app_name"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+</com.xn.materialdesignpro1.pannel.SlidingUpPanelLayout>

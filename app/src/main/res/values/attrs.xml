@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PercentLayout_Layout">
+        <attr name="layout_widthPercent" format="string"/>
+        <attr name="layout_heightPercent" format="string"/>
+
+        <attr name="layout_marginPercent" format="string"/>
+        <attr name="layout_marginLeftPercent" format="string"/>
+        <attr name="layout_marginTopPercent" format="string"/>
+        <attr name="layout_marginRightPercent" format="string"/>
+        <attr name="layout_marginBottomPercent" format="string"/>
+        <attr name="layout_marginStartPercent" format="string"/>
+        <attr name="layout_marginEndPercent" format="string"/>
+
+        <attr name="layout_textSizePercent" format="string"/>
+
+        <attr name="layout_maxWidthPercent" format="string"/>
+        <attr name="layout_maxHeightPercent" format="string"/>
+        <attr name="layout_minWidthPercent" format="string"/>
+        <attr name="layout_minHeightPercent" format="string"/>
+
+        <attr name="layout_paddingPercent" format="string"/>
+        <attr name="layout_paddingTopPercent" format="string"/>
+        <attr name="layout_paddingBottomPercent" format="string"/>
+        <attr name="layout_paddingLeftPercent" format="string"/>
+        <attr name="layout_paddingRightPercent" format="string"/>
+    </declare-styleable>
+
+    <!--自定义动画框架中ScrollView的子控件的属性-->
+    <declare-styleable name="MyCustomScrollView">
+        <attr name="scroll_alpha" format="boolean"/>
+        <attr name="scroll_scaleX" format="boolean"/>
+        <attr name="scroll_scaleY" format="boolean"/>
+        <attr name="scroll_translationfrom"/>
+        <attr name="scroll_bgfromcolor" format="color"/>
+        <attr name="scroll_bgToColor" format="color"/>
+    </declare-styleable>
+    <attr name="scroll_translationfrom">
+        <flag name="left" value="0x01"/>
+        <flag name="top" value="0x02"/>
+        <flag name="right" value="0x04"/>
+        <flag name="bottom" value="0x08"/>
+    </attr>
+
+    <!--自定义动画框架2中视差动画的属性 ,一下属性代表各方向上加速度-->
+    <attr name="a_in" format="float" />
+    <attr name="a_out" format="float" />
+    <attr name="x_in" format="float" />
+    <attr name="x_out" format="float" />
+    <attr name="y_in" format="float" />
+    <attr name="y_out" format="float" />
+
+    <!--自定义ProgressBar属性-->
+<declare-styleable name="MyProgressBar">
+    <attr name="roundColor" format="color"/>
+    <attr name="progressColor" format="color"/>
+    <attr name="strokeWidth" format="dimension"/>
+    <attr name="textColor" format="color"/>
+    <attr name="textSize" format="dimension"/>
+    <attr name="showText" format="boolean"/>
+    <attr name="maxValue" format="integer"/>
+    <attr name="style" format="enum">
+        <enum name="FILL" value="0"/>
+        <enum name="STROKE" value="1"/>
+    </attr>
+</declare-styleable>
+    <declare-styleable name="SlidingUpPanelLayout">
+        <attr name="umanoPanelHeight" format="dimension" />
+        <attr name="umanoShadowHeight" format="dimension" />
+        <attr name="umanoParallaxOffset" format="dimension" />
+        <attr name="umanoFadeColor" format="color" />
+        <attr name="umanoFlingVelocity" format="integer" />
+        <attr name="umanoDragView" format="reference" />
+        <attr name="umanoScrollableView" format="reference" />
+        <attr name="umanoOverlay" format="boolean"/>
+        <attr name="umanoClipPanel" format="boolean"/>
+        <attr name="umanoAnchorPoint" format="float" />
+        <attr name="umanoInitialState" format="enum">
+            <enum name="expanded" value="0" />
+            <enum name="collapsed" value="1" />
+            <enum name="anchored" value="2" />
+            <enum name="hidden" value="3" />
+        </attr>
+        <attr name="umanoScrollInterpolator" format="reference" />
+    </declare-styleable>
+
+    <attr name="normalColor" format="color"/>
+    <attr name="selectedColor" format="color"/>
+
+    <declare-styleable name="VercodeEditText">
+        <!--验证码位数-->
+        <attr name="figures" format="integer"/>
+        <!--间隔-->
+        <attr name="vercodeMargin" format="dimension"/>
+        <!--选中的线颜色-->
+        <attr name="selectedColor"/>
+        <!--正常线的颜色-->
+        <attr name="normalColor"/>
+        <!--底部线高度-->
+        <attr name="bottomLineHeight" format="dimension"/>
+        <!--验证码选中状态下的背景颜色-->
+        <attr name="selectedBackgroundColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="StepView">
+        <attr name="steps" format="integer"/>
+        <attr name="normalColor"/>
+        <attr name="selectedColor"/>
+    </declare-styleable>
+    <declare-styleable name="MyLoadingView">
+        <attr name="backgroundColor" format="color"/>
+        <attr name="loadingText" format="string"/>
+        <attr name="loadingColor" format="color"/>
+    </declare-styleable>
+
+    <attr name="load_Style" format="reference"/>
+
+    <declare-styleable name="MyLoadingView3">
+        <attr name="loadStyle" format="enum">
+            <enum name="ChasingDots" value="0"/>
+            <enum name="Circle" value="1"/>
+        </attr>
+        <attr name="loadColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="DropIndicator">
+        <attr name="color1" format="color"></attr>
+        <attr name="color2" format="color"></attr>
+        <attr name="color3" format="color"></attr>
+        <attr name="color4" format="color"></attr>
+        <attr name="click_color" format="color"></attr>
+        <attr name="circle_color" format="color"></attr>
+        <attr name="radius" format="dimension"></attr>
+        <attr name="scale" format="float"></attr>
+        <attr name="duration" format="integer"></attr>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="ChartView">
+        <!-- xy坐标轴颜色 -->
+        <attr name="xylinecolor" format="color" />
+        <!-- xy坐标轴宽度 -->
+        <attr name="xylinewidth" format="dimension" />
+        <!-- xy坐标轴文字颜色 -->
+        <attr name="xytextcolor" format="color" />
+        <!-- xy坐标轴文字大小 -->
+        <attr name="xytextsize" format="dimension" />
+        <!-- 折线图中折线的颜色 -->
+        <attr name="linecolor" format="color" />
+        <!-- x轴各个坐标点水平间距 -->
+        <attr name="interval" format="dimension" />
+        <!-- 背景颜色 -->
+        <attr name="bgcolor" format="color" />
+        <!--是否在ACTION_UP时，根据速度进行自滑动，建议关闭，过于占用GPU-->
+        <attr name="isScroll" format="boolean" />
+    </declare-styleable>
+</resources>

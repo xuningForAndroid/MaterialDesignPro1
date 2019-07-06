@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".paint.MyCustomActivity">
+<com.xn.materialdesignpro1.paint.MyProgressBar
+    android:layout_marginTop="100dp"
+    android:layout_marginLeft="100dp"
+    android:id="@+id/progressBar"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    app:style="STROKE"
+    app:roundColor="#0f0"
+    app:progressColor="#f00"
+    app:strokeWidth="5dp"
+    app:textColor="#f0f"
+    app:textSize="18sp"
+    />
+    <com.xn.materialdesignpro1.paint.MyProgressBar
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="200dp"
+        android:id="@+id/progressBar2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:style="FILL"
+        app:roundColor="#ff0"
+        app:progressColor="#00f"
+        app:strokeWidth="15dp"
+        app:textColor="#000"
+        app:textSize="18sp"
+        />
+</LinearLayout>
