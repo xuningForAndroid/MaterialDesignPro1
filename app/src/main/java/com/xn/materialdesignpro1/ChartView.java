@@ -409,6 +409,7 @@ public class ChartView extends View {
 
     public static final String TAG = "chartView";
 
+
     /**
      * 绘制XY坐标
      *
